@@ -1,0 +1,39 @@
+Accept a number from user and print all its factor and also print total count of the factor.
+input-12 output- 1,2,3,4,6,12
+count-6
+Solve using method 
+
+using System;
+
+public class Class1
+{
+
+    public int i;
+    //public int count;
+    public void Factor()
+{
+
+    Console.WriteLine("Enter the number");
+    i = int.Parse(Console.ReadLine());
+        int count = 0;
+        Console.WriteLine("FActors:");
+        for(int j = 1; j<=i; j++)
+        {
+            if (i%j==0)
+                {
+                Console.WriteLine(j);
+                count++;
+                }
+        }
+        Console.WriteLine("count of factors:" + count);
+
+}
+
+public static void Main(string[] args)
+{
+    Class1 obj = new Class1();
+    obj.Factor();
+}
+
+
+}
